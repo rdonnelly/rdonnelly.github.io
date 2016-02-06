@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Home
+title: Ryan Donnelly | Developer & Designer
 ---
 
 ## Hey There.
