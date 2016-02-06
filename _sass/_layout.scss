@@ -1,0 +1,89 @@
+/**
+ * Site header
+ */
+
+.site-header {
+	margin-bottom: 2rem;
+}
+
+.site-header-title {
+	font-family: $header-font-family;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 2.25rem;
+	text-transform: uppercase;
+
+	color: $gray-color;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&:active {
+		position: relative;
+		top: 1px;
+	}
+}
+
+.site-header-title-image {
+	width: 2.25rem;
+	height: 2.25rem;
+
+	vertical-align: top;
+
+	border-radius: 0.125rem;
+}
+
+/**
+ * Site footer
+ */
+
+.site-footer {
+	margin-top: 4rem;
+
+	text-align: center;
+
+	font-family: $header-font-family;
+}
+
+.site-footer-list {
+	margin: 0 0 1rem;
+	padding: 0;
+
+	list-style: none;
+}
+
+.site-footer-list-element {
+	display: inline-block;
+
+	&:before {
+		content: '\00b7';
+	}
+
+	&:first-child:before {
+		display: none;
+	}
+}
+
+.site-footer-list-element-link {
+	text-transform: uppercase;
+
+	color: $gray-color !important;
+
+	font-size: 0.8125rem;
+	font-weight: 700;
+
+	&:hover {
+		color: $gray-color-dark !important;
+
+		svg > path {
+			fill: $gray-color-dark;
+		}
+	}
+}
+
+.page-wrapper {
+	max-width: 38rem;
+	margin: 0 auto;
+	padding: 2rem 1.5rem;
+}

@@ -1,0 +1,44 @@
+<footer class="site-footer">
+  <ul class="site-footer-list">
+    <li class="site-footer-list-element">
+      <a class="site-footer-list-element-link" href="/">
+        Home
+      </a>
+    </li>
+    <li class="site-footer-list-element">
+      <a class="site-footer-list-element-link" href="/about">
+        About
+      </a>
+    </li>
+    <li class="site-footer-list-element">
+      <a class="site-footer-list-element-link" href="/blog">
+        Blog
+      </a>
+    </li>
+    <li class="site-footer-list-element">
+      <a class="site-footer-list-element-link" href="/work">
+        Work
+      </a>
+    </li>
+  </ul>
+
+  <ul class="site-footer-list">
+    {% if site.twitter_username %}
+    <li class="site-footer-list-element">
+      <a class="site-footer-list-element-link" href="https://twitter.com/{{ site.twitter_username }}">
+        <span class="icon icon--twitter">{% include icon-twitter.svg %}</span>
+        <span class="username">{{ site.twitter_username }}</span>
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.github_username %}
+    <li class="site-footer-list-element">
+      <a class="site-footer-list-element-link" href="https://github.com/{{ site.github_username }}">
+        <span class="icon icon--github">{% include icon-github.svg %}</span>
+        <span>{{ site.github_username }}</span>
+      </a>
+    </li>
+    {% endif %}
+  </ul>
+</footer>

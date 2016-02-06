@@ -1,0 +1,208 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/**
+ * Basic styling
+ */
+body {
+	color: $text-color;
+	background-color: $background-color;
+
+	font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-feature-settings: 'kern' 1;
+	-moz-font-feature-settings: 'kern' 1;
+	-o-font-feature-settings: 'kern' 1;
+	font-feature-settings: 'kern' 1;
+	font-kerning: normal;
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, %vertical-rhythm {
+	margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/**
+ * Images
+ */
+img {
+	max-width: 100%;
+
+	vertical-align: middle;
+}
+
+
+
+/**
+ * Figures
+ */
+figure > img {
+	display: block;
+}
+
+figcaption {
+	font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+	margin-left: $spacing-unit;
+}
+
+li {
+	> ul, > ol {
+		margin-bottom: 0;
+	}
+}
+
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+	font-family: $header-font-family;
+	font-weight: 700;
+}
+
+
+
+/**
+ * Links
+ */
+a {
+	text-decoration: none;
+
+	color: $brand-color;
+
+	&:hover {
+		text-decoration: underline;
+
+		color: $gray-color-dark;
+	}
+}
+
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+	padding-left: $spacing-unit / 2;
+
+	letter-spacing: -0.0625rem;
+
+	color: $gray-color;
+	border-left: 0.25rem solid $gray-color-light;
+
+	font-size: 1.125rem;
+	font-style: italic;
+
+	> :last-child {
+		margin-bottom: 0;
+	}
+}
+
+
+
+/**
+ * Code formatting
+ */
+pre, code {
+	border: 0.0625rem solid $gray-color-light;
+	border-radius: 0.1875rem;
+	background-color: rgba(238, 238, 255, 1);
+
+	font-size: 0.9375rem;
+}
+
+code {
+	padding: 0.0625rem 0.3125rem;
+}
+
+pre {
+	overflow-x: auto;
+
+	padding: 0.5rem 0.75rem;
+
+	> code {
+		padding-right: 0;
+		padding-left: 0;
+
+		border: 0;
+	}
+}
+
+
+
+/**
+ * Wrapper
+ */
+.wrapper {
+	max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+	max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: $spacing-unit;
+	padding-left: $spacing-unit;
+
+	@extend %clearfix;
+	@include media-query($on-laptop) {
+		max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+		max-width: calc(#{$content-width} - (#{$spacing-unit}));
+		padding-right: $spacing-unit / 2;
+		padding-left: $spacing-unit / 2;
+	}
+}
+
+
+
+/**
+ * Clearfix
+ */
+%clearfix {
+	&:after {
+		display: table;
+		clear: both;
+
+		content: '';
+	}
+}
+
+
+
+/**
+ * Icons
+ */
+.icon {
+	> svg {
+		display: inline-block;
+
+		width: 1rem;
+		height: 1rem;
+
+		vertical-align: middle;
+
+		path {
+			fill: $gray-color;
+		}
+	}
+}
