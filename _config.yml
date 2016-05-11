@@ -9,11 +9,14 @@
 title: Ryan Donnelly
 email: ryanjdonnelly@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Ryan Donnelly is a developer and designer living in Ann Arbor. He really enjoy ultimate frisbee, music, and burritos.
+author: rdonnelly
+twitter:
+  username: rdonnelly
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://rdonnelly.com" # the base hostname & protocol for your site
+
 twitter_username: rdonnelly
 github_username:  rdonnelly
 
