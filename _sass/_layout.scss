@@ -80,11 +80,27 @@
 	font-weight: 700;
 
 	&:hover {
-		color: $gray-color-dark !important;
+		text-decoration: none;
+	}
+}
+
+.site-footer-list-element-link-icon {
+	vertical-align: 2px;
+
+	.site-footer-list-element-link:hover > & {
+		text-decoration: none;
 
 		svg > path {
 			fill: $gray-color-dark;
+			text-decoration: none;
 		}
+	}
+}
+
+.site-footer-list-element-link-label {
+	.site-footer-list-element-link:hover > & {
+		text-decoration: underline;
+		color: $gray-color-dark
 	}
 }
 
