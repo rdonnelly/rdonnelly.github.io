@@ -81,6 +81,7 @@
 
 	&:hover {
 		text-decoration: none;
+
 		color: $gray-color-dark;
 	}
 }
@@ -92,8 +93,9 @@
 		text-decoration: none;
 
 		svg > path {
-			fill: $gray-color-dark;
 			text-decoration: none;
+
+			fill: $gray-color-dark;
 		}
 	}
 }
@@ -101,6 +103,7 @@
 .site-footer-list-element-link-label {
 	.site-footer-list-element-link:hover > & {
 		text-decoration: underline;
+
 		color: $gray-color-dark;
 	}
 }
