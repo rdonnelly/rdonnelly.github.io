@@ -31,6 +31,5 @@ I'm a developer and designer living in [Ann Arbor](https://en.wikipedia.org/wiki
 
 ## Instagram
 
-<!-- INSTANSIVE WIDGET -->
-<script src="//instansive.com/widget/js/instansive.js"></script>
-<iframe src="//instansive.com/widgets/7f2bba66d50d5c4b9e16a21ef673c59f.html" id="instansive_7f2bba66d5" name="instansive_7f2bba66d5" scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+<!-- LightWidget WIDGET -->
+<script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/8c17a9a7977f5c27a707db9c9142ff8d.html" id="lightwidget_8c17a9a797" name="lightwidget_8c17a9a797"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
