@@ -20,9 +20,10 @@ permalink: /work/
     {% if post.tags contains 'portfolio' %}
     <li class="work-page-list-element" style="background-image: url('{{ post.cover }}');">
       <a class="work-page-list-element-link" href="{{ post.url }}">
-
-        <h1 class="work-page-list-element-link-header">{{ post.title }}</h1>
-        <span class="work-page-list-element-link-date">{{ post.date | date: "%b %-d, %Y"  }}</span>
+        <div class="work-page-list-element-link-content">
+          <h1 class="work-page-list-element-link-content-header">{{ post.title }}</h1>
+          <span class="work-page-list-element-link-content-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </div>
       </a>
     </li>
     {% endif %}
