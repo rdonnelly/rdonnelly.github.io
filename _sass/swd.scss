@@ -8,11 +8,17 @@
 }
 
 .swd-page-text {
-  text-align: center;
 }
 
 .swd-page-divider {
+  border: 0;
+  border-top: 1px solid $gray-light-color;
   margin: 2rem 0;
+}
+
+.swd-page-spacer {
+  border: 0;
+  height: 2rem;
 }
 
 .swd-page-app-store-button-image {
