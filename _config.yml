@@ -23,5 +23,5 @@ github_username:  rdonnelly
 # Build settings
 markdown: kramdown
 
-gems:
+plugins:
   - jekyll-seo-tag
