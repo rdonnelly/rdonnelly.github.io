@@ -9,16 +9,15 @@
 title: Ryan Donnelly
 email: ryanjdonnelly@gmail.com
 description: >
-  Ryan Donnelly is a developer and designer living in Ann Arbor. He really enjoys ultimate frisbee, music, and burritos.
+  Ryan Donnelly is a developer and designer living in Ann Arbor.
 author: rdonnelly
-twitter:
-  username: rdonnelly
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://rdonnelly.com" # the base hostname & protocol for your site
 
-twitter_username: rdonnelly
-github_username:  rdonnelly
+github_username: rdonnelly
+linkedin_username: ryanjdonnelly
+mastodon_username: rdonnelly
 
 # Build settings
 markdown: kramdown

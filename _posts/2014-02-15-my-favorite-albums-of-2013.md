@@ -96,4 +96,4 @@ If you have talked to me about music in the last few years, I have likely mentio
 
 ---
 
-I hope you enjoyed the list! If you get a chance, feel free to leave me a comment, hit me up on twitter (@rdonnelly), or send me an email. My goal for this year is to keep this blog up a little more and post some things that I am listening to throughout the year. Hopefully, I will follow through. If not, see you next year!
+I hope you enjoyed the list! If you get a chance, feel free to leave me a comment, hit me up on social, or send me an email. My goal for this year is to keep this blog up a little more and post some things that I am listening to throughout the year. Hopefully, I will follow through. If not, see you next year!
