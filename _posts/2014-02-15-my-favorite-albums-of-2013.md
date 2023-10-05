@@ -11,25 +11,11 @@ tags:
 tumblr_url: http://ryanjdonnelly.com/post/76759870267/my-favorite-albums-of-2013
 ---
 
-Alright, I know it is super late in the year
-to be putting out a list for 2013, but better
-late than never, right?
+Alright, I know it is super late in the year to be putting out a list for 2013, but better late than never, right?
 
-2013 had a lot of great music in it. I was
-not sure if it could match 2012, but it
-definitely did, at least in sheer volume.
-At times I thought that meant it would end
-up feeling a little watered down, but it
-managed to avoid that fate with some really
-strong stuff. Anyway, on to the list...
+2013 had a lot of great music in it. I was not sure if it could match 2012, but it definitely did, at least in sheer volume. At times I thought that meant it would end up feeling a little watered down, but it managed to avoid that fate with some really strong stuff. Anyway, on to the list...
 
-Disclaimer: I do not have any formal music training;
-I am really just going by what I like. I am
-looking for music that pulls a reaction out
-of me or makes me move, not necessarily stuff
-that lives up to hype, is musically sound, or
-is good compared to previous work.
-
+Disclaimer: I do not have any formal music training; I am really just going by what I like. I am looking for music that pulls a reaction out of me or makes me move, not necessarily stuff that lives up to hype, is musically sound, or is good compared to previous work
 ---
 
 ## 10 - Hummingbird - Local Natives
