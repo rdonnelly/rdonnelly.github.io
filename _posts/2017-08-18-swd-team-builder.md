@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'SWD Team Builder App'
+title: 'Project: SWD Team Builder App'
 date: '2017-08-18T00:00:00-05:00'
 cover: /images/posts/swd-preview.png
 tags:
