@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 'Project Spotlight: MPrint'
+title: 'Project: MPrint'
 date: '2016-05-29T00:00:00-05:00'
 cover: /images/posts/mprint1.jpg
 tags:
-- spotlight
 - portfolio
+- spotlight
 - mprint
 ---
 
@@ -31,7 +31,6 @@ Since this was primarily a student tool at the time, we decided to solicit some 
 We got a lot of great feedback, but two answers stood out above the rest. Students used MPrint most often on their way to turn in a paper before class. And they really didn't like having to log in to a lab computer or pull out their laptop. This told us that a mobile version of the app would probably be a good step toward solving these issues.
 
 The mobile version ended up being pretty similar to the desktop version with the exception of not supporting file uploads. At the time, HTML uploads were not supported very well by mobile browsers (alright, Android was fine, but iOS was a mess). Luckily, we had our handy document services to bail us out. Just log on, select a document from whatever file sharing application you use and you're on your way!
-
 
 ## Printer Selection
 
@@ -60,7 +59,6 @@ After a few iterations, we landed on a wizard-style interface. Basically, the us
 On mobile, we took a slightly different approach. The idea that users were on the go and could potentially want to print several documents was a real use-case for us. We chose to go with a shopping cart-style approach.
 
 We used browser storage to allow a user to configure a job and save it for later. The idea here was that a user could spend time beforehand (e.g. on the bus) configuring their jobs and submit them upon arrival. Users could arrive on the scene and be on their way in very little time. And for a student that's running late for class, time is everything.
-
 
 ## Status
 

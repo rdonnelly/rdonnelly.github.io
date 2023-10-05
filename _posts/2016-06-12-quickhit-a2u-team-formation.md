@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Project Quick Hit: Ultimate Team Formation'
+title: 'Project: Ultimate Team Formation'
 date: '2016-06-12T00:00:00-05:00'
 cover: /images/posts/ultimate2.jpg
 tags:

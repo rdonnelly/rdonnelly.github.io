@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 'Project Spotlight: Lokuu'
+title: 'Project: Lokuu'
 date: '2016-05-01T00:00:00-05:00'
 cover: /images/posts/lokuu.jpg
 tags:
-- spotlight
 - portfolio
+- spotlight
 - lokuu
 ---
 I'm going to be adding some new posts here on my blog that take a look at some of the projects I've worked on in the past. The idea here is to show some skills and talk about the design, engineering, or general thought process when creating something. I'll probably be changing up the format as time goes on, so it'll be a learning process for everyone.
@@ -35,7 +35,6 @@ A big hurdle to get past was the idea that people don't want others to know wher
 #### Mobile
 
 Finding your location was really a pain back during Lokuu's inception. You had to type a location and hope that the place you were at came up in the results. Once browsers began implementing HTML5 technologies and added location support, this became a lot easier. Using the mobile version of the site, it would suggest place near your coordinates rather than forcing a search. I also added the notion of favorite locations. This sped the check in process up immensely and made the app feel like something that could actually work.
-
 
 ## The Status
 

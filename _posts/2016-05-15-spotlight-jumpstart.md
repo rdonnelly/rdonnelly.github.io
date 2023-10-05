@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 'Project Spotlight: Jump$tart Clearinghouse'
+title: 'Project: Jump$tart Clearinghouse'
 date: '2016-05-15T00:00:00-05:00'
 cover: /images/posts/jumpstart0.jpg
 tags:
-- spotlight
 - portfolio
+- spotlight
 - jump$tart
 ---
 
