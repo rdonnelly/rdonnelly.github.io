@@ -1,0 +1,19 @@
+# rdonnelly.github.io
+
+## Install dependencies
+
+```
+bundle install
+```
+
+## Run Locally
+
+```
+bundle exec jekyll serve
+```
+
+## Update GitHub Pages
+
+```
+bundle update github-pages
+```

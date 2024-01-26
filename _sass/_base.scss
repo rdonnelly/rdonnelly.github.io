@@ -12,10 +12,13 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-	color: $text-color;
+	color: $text-color-primary;
 	background-color: $background-color;
 
-	font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	font-weight: $base-font-weight;
+	line-height: $base-line-height;
 
 	-webkit-text-size-adjust: 100%;
 	-webkit-font-feature-settings: 'kern' 1;
@@ -83,6 +86,36 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.875rem;
+}
+
+h3 {
+	font-size: 1.625rem;
+}
+
+h4 {
+	font-size: 1.4375rem;
+}
+
+h5 {
+	font-size: 1.25rem;
+}
+
+h6 {
+	font-size: 1.125rem;
+}
+
+small {
+	color: $text-color-subdued;
+	display: inline-block;
+	font-size: 0.75rem;
+	line-height: 1.3125rem;
+}
 
 
 /**
@@ -106,6 +139,8 @@ a {
  * Dividers
  */
 hr {
+	border: 0;
+	border-top: 0.0625rem solid $gray-color-lighter;
 	margin: 2rem 1rem;
 }
 
