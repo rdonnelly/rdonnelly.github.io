@@ -8,7 +8,7 @@ tags:
 - mc-builder
 ---
 
-<img class="mc-page-image" src="/images/mc/mc-icon-1024.png" alt="MC Builder App Icon" title="MC Builder"
+<img class="project-page-image" src="/images/mc/mc-icon-1024.png" alt="MC Builder App Icon" title="MC Builder"
     width="200">
 
 MCBuilder is a mobile and web application I made for a popular card game, [Marvel Champions](https://www.fantasyflightgames.com/en/products/marvel-champions-the-card-game/), by [Fantasy Flight Games](https://www.fantasyflightgames.com). The app allows users to browse all cards in the game, complete with card text [(source)](https://github.com/zzorba/marvelsdb-json-data) and card images [(source)](https://github.com/UnicornSnuggler/Cerebro) and build decks to share.
