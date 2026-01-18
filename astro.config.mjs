@@ -1,11 +1,16 @@
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from '@tailwindcss/vite';
 import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://rdonnelly.com',
-  integrations: [tailwind(), mdx()],
+  integrations: [mdx()],
+  vite: {
+    plugins: [tailwindcss({
+      base: './src/styles/global.css',
+    })],
+  },
   output: 'static',
   build: {
     format: 'file',
