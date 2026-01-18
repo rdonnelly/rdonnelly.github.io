@@ -1,0 +1,58 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('posts');
+const portfolioPosts = posts
+  .filter(post => post.data.tags?.includes('portfolio'))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const formatDate = (date: Date) => {
+  return new Intl.DateTimeFormat('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric'
+  }).format(date);
+};
+---
+
+<PageLayout title="Work">
+  <div class="work-page max-w-[36rem] min-h-[16rem] mx-auto">
+    <h2 class="font-header text-[1.875rem] font-bold mb-4">Work</h2>
+
+    <p class="mb-4">
+      I have worked on a lot of cool projects over the years
+      and this is where I will try to shed a little light
+      on them. I might dive into a whole project or maybe just pick on one feature.
+      For each post, I will talk about some of the decisions and reasoning behind
+      things with varying degrees of detail. I would love some feedback
+      if you have any. Enjoy!
+    </p>
+
+    <ul class="m-0 p-0 list-none">
+      {portfolioPosts.map((post) => (
+        <li 
+          class="overflow-hidden m-0 mb-16 p-0 list-none rounded bg-no-repeat bg-top bg-cover"
+          style={`background-image: url('${post.data.cover}');`}
+        >
+          <a 
+            class="relative block h-80 m-0 no-underline bg-gradient-to-b from-[rgba(68,68,68,0.7)] to-[rgba(0,0,0,0.9)] shadow-[0_0.75rem_1rem_-0.75rem_rgba(0,0,0,0.5)] hover:from-[rgba(34,34,34,0.7)] hover:to-[rgba(0,0,0,0.9)] hover:shadow-[0_0.75rem_1rem_-0.75rem_rgba(0,0,0,0.75)]"
+            href={`/blog/${post.slug}`}
+          >
+            <div class="absolute right-0 bottom-0 left-0 p-4 bg-gradient-to-b from-[rgba(34,34,34,0.75)] to-[rgba(34,34,34,0.8)]">
+              <h1 class="mb-0 text-center text-white/85 font-header text-3xl font-bold">{post.data.title}</h1>
+              <span class="block text-center text-white/85 text-sm">{formatDate(post.data.date)}</span>
+            </div>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</PageLayout>
+
+<style>
+  .work-page a:hover h1,
+  .work-page a:hover span {
+    color: rgba(255, 255, 255, 1);
+  }
+</style>

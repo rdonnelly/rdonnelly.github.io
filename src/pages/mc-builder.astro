@@ -1,0 +1,81 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const appStoreId = '1516561943';
+---
+
+<Layout title="MC Builder" appStoreId={appStoreId}>
+  <div class="max-w-page mx-auto py-8 px-6">
+    <Header />
+    <div class="max-w-[36rem] mx-auto text-center">
+      <img class="max-w-full align-middle my-4 inline-block" src="/images/mc/mc-icon-1024.png" alt="MC Builder" title="MC Builder" width="200" />
+
+      <p class="mb-4">
+        Having trouble remembering what comes in a card pack? Looking for a reference
+        to check card text? Need help building a deck and seeing available cards?
+      </p>
+
+      <h2 class="font-header text-[1.875rem] font-bold mb-4">
+        Let the MC Builder app help!
+      </h2>
+
+      <ul class="mb-4 ml-8 text-left">
+        <li>Browse available cards and pack (through most recent official US release).</li>
+        <li>Assemble a deck, just choose your hero, aspect, and get going!</li>
+        <li>Share your deck in readable format or for others to import.</li>
+      </ul>
+
+      <hr class="border-0 border-t border-stone-200 my-8 mx-4" />
+
+      <p class="my-4">
+        <a href="https://apps.apple.com/us/app/mc-builder/id1516561943" target="_blank">
+          <img class="inline-block align-middle my-1 mx-2" src="/images/mc/apple-app-store.png" width="200" alt="Download on the App Store" title="Download on the App Store" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.rdonnelly.mcbuilder" target="_blank">
+          <img class="inline-block align-middle my-1 mx-2" src="/images/mc/google-play-store.png" width="200" alt="Download on the Google Play Store" title="Download on the Google Play Store" />
+        </a>
+      </p>
+
+      <p class="mb-4">
+        If you would like to stay on the cutting edge and help test the app, please <a class="text-brand no-underline hover:underline hover:text-stone-700" href="https://forms.gle/yqpHm3V9t8AKr7v46" target="_blank">fill out this form to join the beta!</a>
+      </p>
+
+      <hr class="border-0 border-t border-stone-200 my-8 mx-4" />
+
+      <div class="mb-4">
+        <a href="/images/mc/card-detail.png">
+          <img class="inline-block align-middle my-1 mx-2 border border-stone-300 rounded" src="/images/mc/card-detail.png" width="200" alt="Card Detail" />
+        </a>
+        <a href="/images/mc/deck-edit.png">
+          <img class="inline-block align-middle my-1 mx-2 border border-stone-300 rounded" src="/images/mc/deck-edit.png" width="200" alt="Deck Edit" />
+        </a>
+      </div>
+
+      <hr class="border-0 border-t border-stone-200 my-8 mx-4" />
+
+      <h3 class="font-header text-[1.625rem] font-bold mb-4">
+        Patreon
+      </h3>
+
+      <p class="mb-4">
+        Enjoying the app? Consider becoming a Patron! With your support, I will
+        be able to continue future development on the apps.
+      </p>
+
+      <p class="mb-4">
+        <a href="https://www.patreon.com/bePatron?u=4950805" data-patreon-widget-type="become-patron-button">Become a Patron!</a>
+        <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+      </p>
+
+      <hr class="border-0 border-t border-stone-200 my-8 mx-4" />
+
+      <p class="mb-4">
+        Have feedback? I'm interested in any comments, questions, or suggestions
+        you have. <a class="text-brand no-underline hover:underline hover:text-stone-700" href="mailto:ryanjdonnelly+mcbuilder@gmail.com">Send me a message!</a>
+      </p>
+    </div>
+    <Footer />
+  </div>
+</Layout>
