@@ -28,7 +28,19 @@ const formattedDate = new Intl.DateTimeFormat('en-US', {
           <time datetime={date.toISOString()} itemprop="datePublished">{formattedDate}</time>
         </p>
       </header>
-      <div class="post-content prose max-w-none" itemprop="articleBody">
+      <div class="prose prose-stone max-w-none 
+                  prose-headings:font-header prose-headings:font-bold 
+                  prose-h1:text-3xl prose-h2:text-3xl prose-h3:text-2xl 
+                  prose-a:text-brand prose-a:no-underline hover:prose-a:underline hover:prose-a:text-stone-700
+                  prose-ol:list-decimal prose-ul:list-disc
+                  prose-img:mx-auto
+                  prose-blockquote:border-l-4 prose-blockquote:border-stone-400 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:text-stone-600
+                  prose-code:bg-purple-50 prose-code:border prose-code:border-stone-400 prose-code:rounded-sm prose-code:px-1 prose-code:py-0.5
+                  prose-pre:bg-purple-50 prose-pre:border prose-pre:border-stone-400 prose-pre:rounded-sm
+                  prose-hr:border-stone-200
+                  prose-em:text-sm prose-em:text-stone-600
+                  [&_em_strong]:font-bold [&_em_strong]:italic [&_strong_em]:font-bold [&_strong_em]:italic" 
+           itemprop="articleBody">
         <slot />
       </div>
     </article>
