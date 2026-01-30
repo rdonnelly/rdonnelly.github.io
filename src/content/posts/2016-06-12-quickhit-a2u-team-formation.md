@@ -20,7 +20,7 @@ The primary goal when building the team generation piece of the Ann Arbor Ultima
 
 These goals were largely achieved, but it has gone under a number of revisions. For instance, we've reversed the distribution placing lower ranked players first. We placed a higher importance on splitting up new players than splitting up veterans. This was just one change, but seems to give us slightly better results.
 
-#### How does it work?
+## How does it work?
 
 ![Ultimate League App Players](/images/posts/ultimate0.jpg)
 

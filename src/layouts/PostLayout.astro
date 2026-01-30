@@ -1,7 +1,7 @@
 ---
-import Layout from './Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Layout from "./Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
 interface Props {
   title: string;
@@ -11,10 +11,10 @@ interface Props {
 
 const { title, date, description } = Astro.props;
 
-const formattedDate = new Intl.DateTimeFormat('en-US', {
-  month: 'short',
-  day: 'numeric',
-  year: 'numeric'
+const formattedDate = new Intl.DateTimeFormat("en-US", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
 }).format(date);
 ---
 
@@ -23,23 +23,19 @@ const formattedDate = new Intl.DateTimeFormat('en-US', {
     <Header />
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
       <header class="mb-8">
-        <h1 class="font-header text-3xl font-bold mb-4" itemprop="name headline">{title}</h1>
+        <h1
+          class="font-header text-3xl font-bold mb-4"
+          itemprop="name headline"
+        >
+          {title}
+        </h1>
         <p class="text-sm font-bold">
-          <time datetime={date.toISOString()} itemprop="datePublished">{formattedDate}</time>
+          <time datetime={date.toISOString()} itemprop="datePublished"
+            >{formattedDate}</time
+          >
         </p>
       </header>
-      <div class="prose prose-stone max-w-none 
-                  prose-headings:font-header prose-headings:font-bold 
-                  prose-h1:text-3xl prose-h2:text-3xl prose-h3:text-2xl 
-                  prose-a:text-brand prose-a:no-underline hover:prose-a:underline hover:prose-a:text-stone-700
-                  prose-img:mx-auto
-                  prose-blockquote:border-l-4 prose-blockquote:border-stone-400 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:text-stone-600
-                  prose-code:bg-purple-50 prose-code:border prose-code:border-stone-400 prose-code:rounded-sm prose-code:px-1 prose-code:py-0.5
-                  prose-pre:bg-purple-50 prose-pre:border prose-pre:border-stone-400 prose-pre:rounded-sm
-                  prose-hr:border-stone-200
-                  [&_small]:text-xs [&_small]:text-stone-500 [&_small]:block [&_small]:leading-tight
-                  [&_small_strong]:text-stone-600 [&_small_em]:text-stone-500" 
-           itemprop="articleBody">
+      <div class="prose prose-stone" itemprop="articleBody">
         <slot />
       </div>
     </article>

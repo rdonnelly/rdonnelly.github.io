@@ -28,11 +28,11 @@ Lokuu is a location-based social network that allows users to associate short te
 
 ## Iteration
 
-#### Privacy
+### Privacy
 
 A big hurdle to get past was the idea that people don't want others to know where they are. It can be creepy or dangerous. Apps still struggle with this today. I'd love to get all my friends on Swarm. To deal with this, I added a post type where you could set your individual posts to public or private. Private posts could only be seen by friends.
 
-#### Mobile
+### Mobile
 
 Finding your location was really a pain back during Lokuu's inception. You had to type a location and hope that the place you were at came up in the results. Once browsers began implementing HTML5 technologies and added location support, this became a lot easier. Using the mobile version of the site, it would suggest place near your coordinates rather than forcing a search. I also added the notion of favorite locations. This sped the check in process up immensely and made the app feel like something that could actually work.
 

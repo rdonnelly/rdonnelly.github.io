@@ -8,7 +8,7 @@ tags:
 - swd-team-builder
 ---
 
-<img src="/images/swd/swd-team-builder-demo.gif" width="240px">
+<img src="/images/swd/swd-team-builder-demo.gif" width="240px" alt="SWD Team Builder Demo"/>
 
 This project was very much an effort to scratch a personal itch. I have been playing a game called Star Wars: Destiny for a little while and am having a really great time with it. One of the first things you need to do when playing is decide on what characters you are going to play as. Given the constraints on team building, I set out to make this a little easier and to inject some diversity.
 
