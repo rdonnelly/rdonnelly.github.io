@@ -1,9 +1,11 @@
 ---
-import PageLayout from '../layouts/PageLayout.astro';
-import { getCollection } from 'astro:content';
+import PageLayout from "../layouts/PageLayout.astro";
+import { getCollection } from "astro:content";
 
-const posts = await getCollection('posts');
-const sortedPosts = posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const posts = await getCollection("posts");
+const sortedPosts = posts.sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
 const latestPost = sortedPosts[0];
 ---
 
@@ -13,29 +15,46 @@ const latestPost = sortedPosts[0];
   <p class="mb-4">I'm Ryan.</p>
 
   <p class="mb-4">
-    I'm a developer and designer living in <a class="text-brand no-underline hover:underline hover:text-stone-700" href="https://en.wikipedia.org/wiki/Ann_Arbor,_Michigan">Ann Arbor</a>. 
-    I really enjoy <a class="text-brand no-underline hover:underline hover:text-stone-700" href="https://annarborultimate.org">ultimate frisbee</a>, 
-    <a class="text-brand no-underline hover:underline hover:text-stone-700" href="https://music.apple.com/profile/rdonnelly">music</a>, 
-    board games, and travel. If you'd like to know more, <a class="text-brand no-underline hover:underline hover:text-stone-700" href="/about">check out my about page</a> or 
-    <a class="text-brand no-underline hover:underline hover:text-stone-700" href="mailto:ryanjdonnelly@gmail.com">send me an email</a>.
+    I'm a developer and designer living in <a
+      class="text-brand no-underline hover:underline hover:text-stone-700"
+      href="https://en.wikipedia.org/wiki/Ann_Arbor,_Michigan">Ann Arbor</a
+    >. I really enjoy <a
+      class="text-brand no-underline hover:underline hover:text-stone-700"
+      href="https://annarborultimate.org">ultimate frisbee</a
+    >,
+    <a
+      class="text-brand no-underline hover:underline hover:text-stone-700"
+      href="https://music.apple.com/profile/rdonnelly">music</a
+    >, board games, and travel. If you'd like to know more, <a
+      class="text-brand no-underline hover:underline hover:text-stone-700"
+      href="/about">check out my about page</a
+    > or
+    <a
+      class="text-brand no-underline hover:underline hover:text-stone-700"
+      href="mailto:ryanjdonnelly@gmail.com">send me an email</a
+    >.
   </p>
 
   <hr class="border-0 border-t border-stone-200 my-8 mx-4" />
 
   <h2 class="font-header text-[1.875rem] font-bold mb-4">Latest Blog Entry</h2>
 
-  {latestPost && (
-    <>
-      <p class="font-header text-xl font-bold mb-2">{latestPost.data.title}</p>
-      {latestPost.data.description && (
-        <p class="mb-2">{latestPost.data.description}</p>
-      )}
-      <a 
-        class="text-brand no-underline hover:underline hover:text-stone-700" 
-        href={`/blog/${latestPost.slug}`}
-      >
-        Continue Reading&nbsp;→
-      </a>
-    </>
-  )}
+  {
+    latestPost && (
+      <>
+        <p class="font-header text-xl font-bold mb-2">
+          {latestPost.data.title}
+        </p>
+        {latestPost.data.description && (
+          <p class="mb-2">{latestPost.data.description}</p>
+        )}
+        <a
+          class="text-brand no-underline hover:underline hover:text-stone-700"
+          href={`/blog/${latestPost.slug}`}
+        >
+          Continue Reading&nbsp;→
+        </a>
+      </>
+    )
+  }
 </PageLayout>

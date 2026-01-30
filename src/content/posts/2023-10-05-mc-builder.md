@@ -8,8 +8,7 @@ tags:
 - mc-builder
 ---
 
-<img class="project-page-image" src="/images/mc/mc-icon-1024.png" alt="MC Builder App Icon" title="MC Builder"
-    width="200">
+<img class="project-page-image" src="/images/mc/mc-icon-1024.png" alt="MC Builder App Icon" title="MC Builder" width="200">
 
 MCBuilder is a mobile and web application I made for a popular card game, [Marvel Champions](https://www.fantasyflightgames.com/en/products/marvel-champions-the-card-game/), by [Fantasy Flight Games](https://www.fantasyflightgames.com). The app allows users to browse all cards in the game, complete with card text [(source)](https://github.com/zzorba/marvelsdb-json-data) and card images [(source)](https://github.com/UnicornSnuggler/Cerebro) and build decks to share.
 
@@ -29,4 +28,5 @@ Hosting and deployment is handled by [Vercel](https://vercel.com) and [Expo's EA
 
 The game is great, and I think the app makes it nice to browse cards or theroize on a new deck build on the go! Give it a try, and as always, I'm open to feedback!
 
-| [![Download on the App Store](/images/mc/apple-app-store.png)](https://apps.apple.com/us/app/mc-builder/id1516561943) | [![Download on the Google Play Storee](/images/mc/google-play-store.png)](https://play.google.com/store/apps/details?id=com.rdonnelly.mcbuilder) |
+[![Download on the App Store](/images/mc/apple-app-store.png)](https://apps.apple.com/us/app/mc-builder/id1516561943)
+[![Download on the Google Play Storee](/images/mc/google-play-store.png)](https://play.google.com/store/apps/details?id=com.rdonnelly.mcbuilder)

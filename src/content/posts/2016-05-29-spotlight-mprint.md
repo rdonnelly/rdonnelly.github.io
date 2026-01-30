@@ -50,11 +50,11 @@ The other solution was to implement a "Nearby Queues" list. This was also especi
 
 Lastly, the actual submission of a print job was something we spent some time on.
 
-#### Desktop
+### Desktop
 
 After a few iterations, we landed on a wizard-style interface. Basically, the user would proceed down a list of three things that needed to be configured; document, printer, print options (copies, etc.). Upon completion of each step, the submit button would enable and allow for a job to be submitted.
 
-#### Mobile
+### Mobile
 
 On mobile, we took a slightly different approach. The idea that users were on the go and could potentially want to print several documents was a real use-case for us. We chose to go with a shopping cart-style approach.
 

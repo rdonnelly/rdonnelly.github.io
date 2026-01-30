@@ -1,5 +1,5 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 
 interface Props {
   title?: string;
@@ -9,13 +9,14 @@ interface Props {
 
 const { title, description, appStoreId } = Astro.props;
 
-const siteTitle = 'Ryan Donnelly';
-const siteDescription = 'Ryan Donnelly is a developer and designer living in Ann Arbor.';
+const siteTitle = "Ryan Donnelly";
+const siteDescription =
+  "Ryan Donnelly is a developer and designer living in Ann Arbor.";
 const pageTitle = title || siteTitle;
 const metaDescription = description || siteDescription;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -23,24 +24,39 @@ const metaDescription = description || siteDescription;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content={metaDescription} />
-    
-    {appStoreId && (
-      <meta name="apple-itunes-app" content={`app-id=${appStoreId}`} />
-    )}
-    
+
+    {
+      appStoreId && (
+        <meta name="apple-itunes-app" content={`app-id=${appStoreId}`} />
+      )
+    }
+
     <link rel="canonical" href={Astro.url} />
-    <link rel="alternate" type="application/rss+xml" title={siteTitle} href="/feed.xml" />
-    
-    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Merriweather:300,700" rel="stylesheet" type="text/css" />
-    
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={siteTitle}
+      href="/feed.xml"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:700|Merriweather:300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74446828-1"></script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-74446828-1"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-74446828-1');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-74446828-1");
     </script>
   </head>
   <body class="bg-stone-50 text-stone-700 font-sans text-base leading-6">
